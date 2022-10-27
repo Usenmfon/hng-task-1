@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
     age: 26,
     bio: "I'm a backend developer using nodejs and I love reading",
   };
-  res.json(data);
+  res.status(200).json(data);
 });
 
 const port = process.env.PORT || 3000;
